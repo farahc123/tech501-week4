@@ -1,7 +1,7 @@
 # Terraform notes
 
 - [Terraform notes](#terraform-notes)
-- [High-level steps](#high-level-steps)
+  - [High-level steps of what we did on Tuesday](#high-level-steps-of-what-we-did-on-tuesday)
   - [Installing Terraform on Windows](#installing-terraform-on-windows)
   - [Storing our AWS access keys as environment variables](#storing-our-aws-access-keys-as-environment-variables)
   - [Infrastructure as code](#infrastructure-as-code)
@@ -14,7 +14,7 @@
   - [Best practice supplying AWS credentials to Terraform](#best-practice-supplying-aws-credentials-to-terraform)
   - [If Terraform needs AWS access, there are different options on supplying the AWS credentials to Terraform. What is order in which Terraform looks up AWS credentials (which ways take precedence/priority)?](#if-terraform-needs-aws-access-there-are-different-options-on-supplying-the-aws-credentials-to-terraform-what-is-order-in-which-terraform-looks-up-aws-credentials-which-ways-take-precedencepriority)
 
-# High-level steps
+## High-level steps of what we did on Tuesday
 
 1. Installed Terraform
 2. Added AWS ID and key to system environment variables
