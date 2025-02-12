@@ -13,19 +13,21 @@
   - [In IaC, what is orchestration? How does Terraform act as "orchestrator"?](#in-iac-what-is-orchestration-how-does-terraform-act-as-orchestrator)
   - [Best practice supplying AWS credentials to Terraform](#best-practice-supplying-aws-credentials-to-terraform)
   - [If Terraform needs AWS access, there are different options on supplying the AWS credentials to Terraform. What is order in which Terraform looks up AWS credentials (which ways take precedence/priority)?](#if-terraform-needs-aws-access-there-are-different-options-on-supplying-the-aws-credentials-to-terraform-what-is-order-in-which-terraform-looks-up-aws-credentials-which-ways-take-precedencepriority)
+  - [Terraform modules](#terraform-modules)
+  - [Helpful links](#helpful-links)
 
 ## High-level steps of what we did on Tuesday
 
 1. Installed Terraform
 2. Added AWS ID and key to system environment variables
-3. Created folder for this project (*~/OneDrive - Sparta Global/Documents/Github/tech501-terraform/create-ec2-instance*)
-4. ran Terraform commands to create and destroy EC2 instance (see [here](Terraform steps.md))
+3. Created folder for this project and a *main.tf* file to define our EC2 instance (*~/OneDrive - Sparta Global/Documents/Github/tech501-terraform/create-ec2-instance*)
+4. ran Terraform commands to create and destroy EC2 instance (see [here](<Terraform steps.md>))
 5. Initialised this folder as a Git repo:
    1. `git init`
    2. `git branch -M main`
 6. Created `.gitignore` file in this repo with `.terraform/`, and `terraform.tfstate`, `terraform.tfstate.backup` inside
 7. Ran `git status` to ensure these weren't being tracked; also ran `git add .` and then `git status` to confirm this
-8. Created AWS security group using Terraform and modified the *main.tf* file for the EC2 instance we created earlier
+8. Created AWS security group using Terraform (in *security_groups.tf*) and modified the *main.tf* file we created earlier
 
 
 ## Installing Terraform on Windows
@@ -120,4 +122,20 @@
 1. environment variables (e.g. cloud provider has a standard ID and Key name so Terraform knows how to look it up; thr AWS plugin Terraform uses knows what this is so it will look it up; note that these required variable names etc. may change with updates of versions)
 2. Terraform variables
 3. AWS shared credentials file
-4. IAM role
+4. IAM role (Identity Access Management role; an AWS role that temporarily grants permissions to a user -- distinct from an IAM user, who has these permissions permanently)
+
+## Terraform modules
+
+- **module**: a collection of Terraform files in a folder
+- **root module**: the directory containing the grouped Terraform files that you're running your commands against
+- **child module**:
+- **variables**: input
+- **data source**: external information referenced/looked up in a Terraform file; notated with `data` as the first block(s) following the `provider` block  
+
+## Helpful links
+
+- [Template for creating EC2 instances in Terraform](https://github.com/terraform-aws-modules/terraform-aws-ec2-instance)
+- [Template for creating AWS security groups in Terraform](https://github.com/terraform-aws-modules/terraform-aws-security-group)
+- [Template for creating AWS VPCS i.e. virtual networks in Terraform](https://github.com/terraform-aws-modules/terraform-aws-vpc)
+- [More templates for creating AWS resources in modular format in Terraform](https://github.com/terraform-aws-modules)
+- [Terraform official documentation](http://developer.hashicorp.com/terraform)

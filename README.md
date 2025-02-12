@@ -1,8 +1,9 @@
 # Week 4
 
-
-
-
+- [Intro to Terraform](<Terraform intro.md>)
+- [General steps for using Terraform](<General Terraform steps.md>)
+- [Using variables in Terraform](<Terraform variables.md>)
+- [Deploying our 2-tier app on Azure using Terraform](<Azure and Terraform 2-tier deployment/Azure and Terraform VN and VMs steps steps.md>)
 
 
 ## Workflow for creating a new local repo and syncing it to a new Github repo
