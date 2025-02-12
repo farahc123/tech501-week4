@@ -1,5 +1,11 @@
 # General steps when using Terraform
 
+- [General steps when using Terraform](#general-steps-when-using-terraform)
+  - [Steps](#steps)
+  - [Helpful links](#helpful-links)
+
+## Steps
+
 1. create repo for terraform
 2.  `terraform init` in the right folder (i.e. our repo that contains our main.tf file)![alt text](image-2.png)
 3.  `terraform validate` to validate the syntax of our .tf files

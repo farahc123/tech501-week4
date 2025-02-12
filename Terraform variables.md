@@ -1,5 +1,10 @@
 # Variables in Terraform
 
+- [Variables in Terraform](#variables-in-terraform)
+  - [Why use them?](#why-use-them)
+  - [Variable file (to be git ignored)](#variable-file-to-be-git-ignored)
+
+
 ## Why use them?
 
 - DRY: don't repeat yourself principle

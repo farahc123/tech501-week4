@@ -1,5 +1,13 @@
 # Steps
 
+- [Steps](#steps)
+  - [Setting up Azure CLI](#setting-up-azure-cli)
+  - [Creating the 2-subnet virtual network](#creating-the-2-subnet-virtual-network)
+    - [Results](#results)
+  - [Creating the app VM](#creating-the-app-vm)
+    - [Results](#results-1)
+
+
 1. Set up Azure CLI
 2. Create virtual network and its 2 subnets with their corresponding NSGs and rules
 3. Create app VM
