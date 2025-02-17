@@ -38,10 +38,10 @@
 ### Results
 
 - An app VM created with Terraform
-![alt text](image-1.png)
+![alt text](image-6.png)
 
 - Proof that my app works on the above VM
-![alt text](image-2.png)
+![alt text](image-5.png)
 
 ## Creating the DB VM
 
@@ -51,6 +51,8 @@
 
 ### Results
 
-- A DB VM created with Terraform (to be added)
+- A DB VM created with Terraform
+![alt text](image-3.png)
 
-- Proof of my posts page working (to be added)
+- Proof of my posts page working
+![alt text](image-4.png)

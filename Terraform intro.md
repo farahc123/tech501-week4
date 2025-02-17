@@ -134,8 +134,9 @@
 
 ## Helpful links
 
+- [Terraform official documentation](http://developer.hashicorp.com/terraform)
+- [Windows tool for creating Azure instances using Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-terraform?tabs=azure-cli); note that HC documentation is preferable because they updated their syntax often and this isn't always reflected in third-party resources
 - [Template for creating EC2 instances in Terraform](https://github.com/terraform-aws-modules/terraform-aws-ec2-instance)
 - [Template for creating AWS security groups in Terraform](https://github.com/terraform-aws-modules/terraform-aws-security-group)
 - [Template for creating AWS VPCS i.e. virtual networks in Terraform](https://github.com/terraform-aws-modules/terraform-aws-vpc)
 - [More templates for creating AWS resources in modular format in Terraform](https://github.com/terraform-aws-modules)
-- [Terraform official documentation](http://developer.hashicorp.com/terraform)
